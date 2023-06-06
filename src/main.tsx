@@ -5,6 +5,7 @@ import { ThirdwebProvider } from "@thirdweb-dev/react";
 import "./styles/globals.css";
 import { Toaster } from "./components/ui/Toaster";
 import { getGasless } from "./utils/getGasless";
+import { QTestnet } from "@thirdweb-dev/chains";
 import {
   biconomyApiIdConst,
   biconomyApiKeyConst,
@@ -29,6 +30,7 @@ const sdkOptions = getGasless(relayerUrl, biconomyApiKey, biconomyApiId);
 /* Use this when every embed changes to new embeds
 const network = urlParams.get("network") || "ethereum";
 const activeChain = getChainBySlug(network); */
+
 
 root.render(
   <React.StrictMode>
