@@ -34,7 +34,7 @@ const activeChain = getChainBySlug(network); */
 
 root.render(
   <React.StrictMode>
-    <ThirdwebProvider activeChain={chain} sdkOptions={sdkOptions}>
+    <ThirdwebProvider activeChain={QTestnet} sdkOptions={sdkOptions}>
       <Toaster />
       <App />
     </ThirdwebProvider>

@@ -2,12 +2,12 @@
 
 // Your smart contract address (available on the thirdweb dashboard)
 // For existing collections: import your existing contracts on the dashboard: https://thirdweb.com/dashboard
-export const contractConst = "0x436492DBc2E30E56FaC8F2297BD1964833c0687d";
+export const contractConst = "0x1F1E47F7Ff2999964CB7d452E967c5F83D9d42e2";
 
 // The name of the chain your contract is deployed to.
 // Provide a string for standard chains, or import one from @thirdweb-dev/chains package.
 // Learn more: https://portal.thirdweb.com/react/react.thirdwebprovider#activechain-recommended
-export const chainConst = "mumbai";
+export const chainConst = "q-testnet";
 
 // Configure the primary color for buttons and other UI elements
 export const primaryColorConst = "white";
