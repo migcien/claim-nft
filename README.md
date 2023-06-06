@@ -1,4 +1,4 @@
-# ERC721 Drop Claim Page
+# NFT Drop Claim Page deployed on the Q-testnet network
 Example of an NFT Drop Claim Page.
 
 ### 1. Customize the Styling

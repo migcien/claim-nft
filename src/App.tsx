@@ -269,7 +269,8 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen w-screen">
+    <div className="min-h-screen w-screen bg-center transform scale-140 mb-0 pb-0 overflow-hidden">
+      <h1 className="text-4xl font-bold text-center mt-3 mb-[-80px]">NFT collection on the Q-testnet</h1>
       <ConnectWallet className="!absolute !right-4 !top-4" theme={theme} />
       <div className="grid h-screen grid-cols-1 lg:grid-cols-12">
         <div className="hidden h-full w-full items-center justify-center lg:col-span-5 lg:flex lg:px-12">
@@ -324,7 +325,7 @@ export default function Home() {
               </h1>
               {contractMetadata.data?.description ||
               contractMetadata.isLoading ? (
-                <div className="line-clamp-2 text-gray-500">
+                <div className="line-clamp-8 text-white-500 text-justify">
                   {contractMetadata.isLoading ? (
                     <div
                       role="status"
@@ -458,7 +459,17 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <PoweredBy />
+      <hr className="border-t-4 border-white my-[-60px] mb-0 w-9/10 mx-auto" /> {/* Horizontal white line */}
+      <div className="text-right mb-0 mb-0">
+        <a 
+        href="https://www.linkedin.com/in/miguelcienfuegos/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-2xl font-medium rounded-md text-white bg-linkedin-600 hover:bg-linkedin-700"
+        >
+        Follow me on LinkedIn
+        </a>
+      </div>
     </div>
   );
 }
